@@ -10,18 +10,20 @@ var block_image_object= "";
 
 function new_image(get_image)
 {
-	function new_image(get_image)
-}
-fabric.Image.fromUrl(get_image, functionImg){
+	
+
+fabric.Image.fromURL(get_image, function(Img){
+	block_image_object=Img;
+
 	block_image_object.scaleToWidth(block_image_width);
-	block_image_object.scaletowidth(block_image_height);
+	block_image_object.scaleToHeight(block_image_height);
 	block_image_object.set({
 top:block_y,
 left:block_x
-	}	;
+	})	;
 canvas.add(block_image_object);
-	)
-};
+});
+}
 window.addEventListener("keydown", my_keydown);
 
 function my_keydown(e)
@@ -29,32 +31,32 @@ function my_keydown(e)
 keyPressed = e.keyCode;
 console.log(keyPressed);
 
-	if(keyPressed == '.keycode')
-	{
-	if(keyPressed == '82')
+	
+	
+	if(keyPressed == '82'){
 	new_image('rr1.png')
 	}
 
 	if(keyPressed == '71')
 	{
 		block_x = 200;
-		new_image(gr.png)
+		new_image("gr.png")
 	}
 	
 	if(keyPressed == '89')
 	{
 		block_x =350;
-		new_image(yr.png)
+		new_image("yr.png")
 	}
 	if(keyPressed == '80')
 	{
 		block_x = 600;
-		new_image(pr.png)
+		new_image("pr.png")
 	}
 	if(keyPressed == '66')
 	{
 		block_x = 700;
-	new_image(br.png)
+	new_image("br.png")
 	}
 	
 }
